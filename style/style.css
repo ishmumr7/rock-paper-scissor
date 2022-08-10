@@ -35,7 +35,7 @@ body {
 }
 
 .selection {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,7 +81,7 @@ body {
 
 .result {
     height: 140px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -93,11 +93,46 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 28px;
 }
 
 .score-head {
     font-size: 24px;
+}
+
+.comment {
+    font-size: small;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.you,
+.computer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.score .icon {
+    font-size: 30px;
+}
+
+.points {
+    height: 38px;
+    width: 38px;
+    font-size: 24px;
+    background: white;
+    color: black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
