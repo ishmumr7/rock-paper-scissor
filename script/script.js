@@ -19,7 +19,10 @@ function getComputerChoice() {
 function getPlayerChoice() {
     while (true) {
         choice = prompt("Enter 'Rock', 'Paper' or 'Scissors': ");
-        if (choice.toLowerCase() === 'rock' || choice.toLowerCase() === 'paper' || choice.toLowerCase() === 'scissors') {
+        if (
+            choice.toLowerCase() === 'rock' ||
+            choice.toLowerCase() === 'paper' ||
+            choice.toLowerCase() === 'scissors') {
             return choice;
         } else {
             alert("Invalid choice! Try again.");
@@ -30,28 +33,40 @@ function getPlayerChoice() {
 function playRound(playerChoice, computerChoice) {
     if (playerChoice.toLowerCase() === computerChoice) {
         return "Tie!";
-    } 
-    else if (playerChoice.toLowerCase() === 'rock' && computerChoice === 'paper') {
+    }
+    else if (
+        playerChoice.toLowerCase() === 'rock' &&
+        computerChoice === 'paper') {
         computerPoint++;
         return "You lose! Paper beats Rock";
-    } 
-    else if (playerChoice.toLowerCase() === 'paper' && computerChoice === 'scissors') {
+    }
+    else if (
+        playerChoice.toLowerCase() === 'paper' &&
+        computerChoice === 'scissors') {
         computerPoint++;
         return "You lose! Scissors beat Paper";
     }
-    else if (playerChoice.toLowerCase() === 'rock' && computerChoice === 'scissors') {
+    else if (
+        playerChoice.toLowerCase() === 'rock' &&
+        computerChoice === 'scissors') {
         playerPoint++;
         return "You win! Rock beats Scissors";
     }
-    else if (playerChoice.toLowerCase() === 'paper' && computerChoice === 'rock') {
+    else if (
+        playerChoice.toLowerCase() === 'paper' &&
+        computerChoice === 'rock') {
         playerPoint++;
         return "You win! Paper beats Rock";
     }
-    else if (playerChoice.toLowerCase() === 'scissors' && computerChoice === 'paper') {
+    else if (
+        playerChoice.toLowerCase() === 'scissors' &&
+        computerChoice === 'paper') {
         playerPoint++;
         return "You win! Scissors beat Paper";
     }
-    else if (playerChoice.toLowerCase() === 'scissors' && computerChoice === 'rock') {
+    else if (
+        playerChoice.toLowerCase() === 'scissors' &&
+        computerChoice === 'rock') {
         computerPoint++;
         return "You lose! Scissors beat Rock";
     }
