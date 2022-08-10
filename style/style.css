@@ -32,6 +32,11 @@ body {
 
 .body {
     padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .selection {
@@ -41,6 +46,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 35px;
+    flex-wrap: wrap;
 }
 
 .prompt {
@@ -52,6 +58,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 #btn {
@@ -84,8 +91,28 @@ body {
     margin-bottom: 120px;
     font-size: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 35px;
+}
+
+.result button {
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    padding: 7px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s, background-color 0.1s;
+}
+
+.result button:hover {
+    transform: scale(1.1);
+}
+
+.result button:active {
+    background-color: gray;
 }
 
 .head2head {
@@ -109,6 +136,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .you,
