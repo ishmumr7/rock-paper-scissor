@@ -27,3 +27,67 @@ body {
     font-size: 12px;
     color: lightgrey;
 }
+
+/* Body */
+
+.body {
+    padding: 10px 50px;
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.prompt {
+    font-size: 20px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#btn {
+    width: 150px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: 0.5s, background-color 0.1s;
+}
+
+#btn:hover {
+    transform: scale(1.1);
+}
+
+#btn:active {
+    background-color: darkgrey;
+}
+
+.icon {
+    font-size: 34px;
+}
+
+.result {
+    height: 140px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hidden {
+    display: none;
+}
