@@ -35,6 +35,7 @@ body {
 }
 
 .selection {
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +44,7 @@ body {
 }
 
 .prompt {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .btns {
@@ -80,10 +81,23 @@ body {
 
 .result {
     height: 140px;
+    margin-bottom: 80px;
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.head2head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.score-head {
+    font-size: 24px;
 }
 
 
